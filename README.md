@@ -77,7 +77,7 @@ To install npm, type this on your favorite cli
 
 ### Installation
 
-_To run this app, simply follow this installation steps_
+_To install and run this app locally, simply follow this installation steps_
 
 1. Clone the repo
    ```sh
@@ -91,7 +91,15 @@ _To run this app, simply follow this installation steps_
    ```js
    node app.js;
    ```
-4. Access using localhost 
+4. Replicate MySQL schema locally on your machine
+5. Configure DB credentials on .env
+   ```js
+    DB_HOST = "localhost"
+    DB_USERNAME = "username"
+    DB_PASSWORD = "password"
+    DB_DBNAME = "yourdbname"
+   ```
+6. Access using localhost 
    ```js
    localhost:5000
    ```
