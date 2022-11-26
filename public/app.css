@@ -1,0 +1,103 @@
+body {
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.screen {
+    height: 100vh;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: #f8f9fa;
+}
+
+.title-text {
+    font-family: 'Space Mono', sans-serif;
+    color: #f8f9fa;
+
+}
+
+.highlight {
+    background-color: #f8f9fa;
+    color: #212529;
+    padding: 0.1rem 0.2rem;
+}
+
+.form-container {
+    width: 80%;
+}
+
+.form-control:focus {
+    background-color: transparent !important;
+    border-color: #f8f9fa !important;
+    box-shadow: 0 0 5px #f8f9fa !important;
+}
+
+.form-control {
+    font-family: 'Space Mono', sans-serif;
+}
+
+.btn {
+    font-family: 'Space Mono', monospace;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.footer {
+    margin-top: 10em;
+}
+
+video[poster] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.form-control::-moz-placeholder {
+    color: #f8f9fa !important;
+    opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #f8f9fa !important;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #f8f9fa !important;
+}
+
+.typed {
+    display: inline-block;
+    margin-left: 0.05em;
+    border-left: 0.1em solid #f8f9fa;
+    height: 100%;
+    height: 0.8em;
+    animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #f8f9fa; }
+    
+}
